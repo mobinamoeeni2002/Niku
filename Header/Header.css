@@ -1,0 +1,89 @@
+.header {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+  padding: 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.left,
+.right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.center {
+  margin-left: 85px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.brand {
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #6B4C3d;
+  font-family: 'Vazirmatn', Tahoma, sans-serif;
+  text-decoration: none;
+  margin-right: 70px;
+}
+
+.link {
+  font-size: 1rem;
+  color: #341F1A;
+  text-decoration: none;
+  transition: color 0.2s, background 0.2s;
+  padding: 8px 12px;
+  border-radius: 6px;
+}
+
+.link:hover {
+  background: #f1f1f1;
+  color: #6B4C3d;
+}
+
+/* Icon-specific styles */
+.icon-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon-link svg {
+  transition: color 0.2s;
+}
+
+.icon-link:hover svg {
+  color: #6B4C3d;
+}
+
+/* Responsive design - hide text on smaller screens, show only icons */
+@media (max-width: 768px) {
+  .icon-link span {
+    display: none;
+  }
+  
+  .icon-link {
+    padding: 8px;
+  }
+  
+  .left,
+  .right {
+    gap: 16px;
+  }
+}
